@@ -16,7 +16,7 @@ public class ArrayParserTest {
         String line= "1 2 3";
 
         //when
-        Array answer = new Array(arrayParser.parseString(line));
+        Array answer = arrayParser.parseString(line);
         //then
         Assert.assertEquals(array, answer);
     }

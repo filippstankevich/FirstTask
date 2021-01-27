@@ -9,7 +9,7 @@ public class ArrayValidator {
 
     public boolean validate(String line){
         boolean result = false;
-        Pattern pattern = Pattern.compile("[0-9 ]+");
+        Pattern pattern = Pattern.compile("[0-9- ]+");
         Pattern patternOnlySpaces = Pattern.compile("\\s+");
         Matcher matcher = pattern.matcher(line);
         Matcher matcherOnlySpaces = patternOnlySpaces.matcher(line);

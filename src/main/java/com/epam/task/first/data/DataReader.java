@@ -12,11 +12,9 @@ import java.util.List;
 public class DataReader {
     private String inputFileName;
 
-    public DataReader(String fileName) {
-        this.inputFileName = fileName;
-    }
+    public DataReader() {}
 
-    public List<String> readFile() throws IOException {
+    public List<String> readFile(String inputFileName) throws IOException {
         List<String> stringList = new ArrayList<>();
         try {
         BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
