@@ -26,11 +26,12 @@ public class ArrayCreatorTest {
 
 
     @Test
-    public void testFindMaxWhenNegative() throws IOException {
+    public void testProccesShouldReturnListOfArays() throws IOException {
         //given
         DataReader reader = Mockito.mock(DataReader.class);
         when(reader.readFile(anyString())).thenReturn(TEST_DATA);
         ArrayCreator creator = new ArrayCreator(reader, validator, parser);
+
         List<Array> arrayList = new ArrayList<>();
         Array<Integer> tempIntArray = new Array<Integer>(1, 2, 3);
         arrayList.add(tempIntArray);

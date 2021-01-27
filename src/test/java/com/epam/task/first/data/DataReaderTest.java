@@ -27,7 +27,7 @@ public class DataReaderTest {
     }*/
 
     @Test
-    public void testFindMaxWhenNegative() throws IOException {
+    public void testReadFileShouldReadFileAsListOfStrings() throws IOException {
         //given
         DataReader reader = new DataReader();
         List<String> exampleString = Arrays.asList("1 2 3", "2sdf 3 123", "  3453", "123 -2 1");
